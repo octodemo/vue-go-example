@@ -10,6 +10,9 @@ VERSION='1.14'
 OS='linux'
 ARCH='amd64'
 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
 curl -OL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
 tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 rm go$VERSION.$OS-$ARCH.tar.gz
