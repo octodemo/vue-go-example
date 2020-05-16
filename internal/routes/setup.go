@@ -20,6 +20,7 @@ func SetupRoutes() *gin.Engine {
 	r.GET("/api/specs", func(c *gin.Context) {
 		c.JSON(200, []string{
 			runtime.GOOS,
+			runtime.TypeAssertionError()
 			strconv.Itoa(runtime.NumCPU()),
 			strconv.FormatUint(memory.TotalMemory()/(1024*1024), 10),
 		})

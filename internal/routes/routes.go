@@ -29,7 +29,7 @@ func init() {
 // Persist saves the given data
 func Persist(c *gin.Context) {
 	data := new(memData)
-	c.Bind(&data)
+	// c.Bind(&data)
 
 	memDB := db.Database
 	txn := memDB.Txn(true)
@@ -67,12 +67,12 @@ func StdDev(c *gin.Context) {
 	defer txn.Abort()
 
 	raw, err := txn.First("data", "id", uint(1))
+
 	if err != nil {
 		panic(err)
 	}
 
 	stdev := stat.StdDev(raw.(*dbSchema).Data, nil)
-
 	c.JSON(200, stdev)
 }
 
