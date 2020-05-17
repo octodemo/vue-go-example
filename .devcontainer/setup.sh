@@ -22,7 +22,8 @@ echo "Go version ${INSTALLED_GO_VERSION} is installed"
 
 # install gopls, dlv, hey
 echo "Getting development tools"
-go get -u golang.org/x/tools/gopls
+go get -v golang.org/x/tools/gopls
+# go get -u golang.org/x/tools/gopls
 go get -u github.com/go-delve/delve/cmd/dlv
 go get -u github.com/rakyll/hey
 
