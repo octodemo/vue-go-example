@@ -15,6 +15,4 @@ RUN apt-get update && apt-get install -y nodejs
 RUN apt-get install build-essential -y
 
 RUN bash setup.sh
-RUN ls -l
-RUN ls -l ..
 USER user
