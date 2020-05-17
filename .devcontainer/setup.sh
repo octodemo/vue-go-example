@@ -43,6 +43,6 @@ go get -u -v golang.org/x/lint/golint
 go get -u -v golang.org/x/tools/cmd/gorename
 
 ## Node (vue) project
-$HOME/workspace/vue-go-example/web
+cd $HOME/workspace/vue-go-example/web
 npm install
 cd -
