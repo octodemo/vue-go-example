@@ -12,7 +12,7 @@ RUN apt-get update -q \
     
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get update && apt-get install -y nodejs
-run apt-get build-essential -y
+RUN apt-get install build-essential -y
 
 RUN bash setup.sh
 USER user
