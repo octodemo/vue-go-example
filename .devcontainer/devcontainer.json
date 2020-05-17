@@ -1,6 +1,7 @@
 {
     "name": "Codespaces Go Template Repository",
     "extensions": [
+        "octref.vetur",
         "coenraads.bracket-pair-colorizer-2",
         "eamodio.gitlens",
         "github.vscode-pull-request-github",
