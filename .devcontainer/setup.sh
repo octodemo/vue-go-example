@@ -43,6 +43,3 @@ go get -u -v golang.org/x/lint/golint
 go get -u -v golang.org/x/tools/cmd/gorename
 go get -u s-v github.com/uudashr/gopkgs/v2/cmd/gopkgs
 
-## Node (vue) project
-cd /home/user/workspace/vue-go-example
-npm install
