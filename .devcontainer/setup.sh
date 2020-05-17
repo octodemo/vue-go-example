@@ -45,4 +45,3 @@ go get -u -v golang.org/x/tools/cmd/gorename
 ## Node (vue) project
 cd $HOME/workspace/vue-go-example/web
 npm install
-cd -
