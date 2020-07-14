@@ -41,5 +41,5 @@ go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
 go get -u -v github.com/zmb3/gogetdoc
 go get -u -v golang.org/x/lint/golint
 go get -u -v golang.org/x/tools/cmd/gorename
-go get -u s-v github.com/uudashr/gopkgs/v2/cmd/gopkgs
+go get -u -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
 
